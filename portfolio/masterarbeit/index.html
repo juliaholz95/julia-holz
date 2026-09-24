@@ -1,82 +1,34 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Informationsverhalten bezüglich der COVID-19-Impfung</title>
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scrollytelling zur Masterarbeit über das Informationsverhalten syrischer Migrant:innen zur COVID-19-Impfung.">
+  <title>Informationsverhalten & COVID-19-Impfung | Masterarbeit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="progress"><span id="progressBar"></span></div>
-<main>
+  <header class="progress-header">
+    <div class="progress-label" id="progressLabel">01 / 15</div>
+    <div class="progress-track"><span id="progressBar"></span></div>
+  </header>
 
-<section class="hero scene">
-  <div class="hero-bg"><i class="dot d1"></i><i class="dot d2"></i><i class="dot d3"></i><i class="dot d4"></i></div>
-  <div class="hero-content">
-    <p class="eyebrow hero-reveal">MASTERARBEIT · 2021</p>
-    <h1 class="hero-reveal">Wie informieren sich<br><em>syrische Migrant:innen</em><br>über die COVID-19-Impfung?</h1>
-    <p class="hero-sub hero-reveal">Eine visuelle Reise durch sieben Interviews in Leipzig.</p>
-    <div class="scroll-cue hero-reveal"><span></span>Scrollen</div>
-  </div>
-</section>
+  <main id="story"></main>
 
-<section class="chapter intro scene"><div class="sticky">
-  <div class="chapter-number">01</div>
-  <div class="two-col"><div><p class="eyebrow">Ausgangspunkt</p><h2>Wenn Information<br>nicht alle erreicht</h2></div>
-  <div class="copy"><p>Während der Pandemie prägten Medien, Behörden und soziale Netzwerke den öffentlichen Diskurs über die COVID-19-Impfung.</p><p>Doch erreichen diese Informationen auch Menschen, die neu in Deutschland sind – und wenn ja: <strong>wie?</strong></p></div></div>
-  <div class="info-stream"><span>RKI</span><span>Deutsche Welle</span><span>Facebook</span><span>Telegram</span><span>YouTube</span><span>Ärzt:innen</span><span>Familie</span><span>Community</span></div>
-</div></section>
+  <footer class="site-footer">
+    <div>
+      <strong>Masterarbeit · 2021</strong>
+      <span>Qualitative Studie mit sieben syrischen Migrant:innen in Leipzig</span>
+    </div>
+    <a href="#" id="thesisLink">Masterarbeit ansehen →</a>
+  </footer>
 
-<section class="chapter study scene"><div class="sticky">
-  <div class="chapter-number">02</div><p class="eyebrow">Die Studie</p><h2>7 Gespräche.<br>7 Perspektiven.</h2>
-  <div class="participants"><div class="people-grid" id="peopleGrid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-  <div class="stats"><div><b>7</b><small>Interviews</small></div><div><b>24–37</b><small>Jahre</small></div><div><b>5 / 7</b><small>geimpft</small></div><div><b>4 / 3</b><small>Männer / Frauen</small></div></div></div>
-  <p class="method">Leitfadengestützte, offene Interviews · qualitative Inhaltsanalyse · Leipzig</p>
-</div></section>
-
-<section class="chapter rings-scene scene"><div class="sticky">
-  <div class="chapter-number">03</div>
-  <div class="rings-copy"><p class="eyebrow">Informationsquellen</p><h2>Die Informationswelt<br>ist ein Netzwerk.</h2><p id="ringText">Zunächst steht nur die Frage im Raum: Woher kommen Informationen?</p></div>
-  <div class="rings-visual" id="ringsVisual">
-    <div class="ring r1"><span>COVID-19</span></div><div class="ring r2"><span>Institutionen</span></div><div class="ring r3"><span>Medien</span></div><div class="ring r4"><span>soziales Umfeld</span></div><div class="ring r5"><span>Community</span></div><div class="ring-core">Information</div>
-  </div>
-</div></section>
-
-<section class="chapter trust scene"><div class="sticky">
-  <div class="chapter-number">04</div><p class="eyebrow">Eine zentrale Erkenntnis</p><h2>Vertrauen<br><em>ist nicht</em> Entscheidung.</h2>
-  <div class="trust-map">
-    <div class="trust-side"><p>Hohe funktionale Vertrauenswürdigkeit</p><span class="source official">RKI</span><span class="source official">Ärzt:innen</span><span class="source official">CDC</span></div>
-    <div class="arrow-flow">→</div>
-    <div class="trust-side decision"><p>Einfluss auf die Impfentscheidung</p><span class="source social">Familie</span><span class="source social">Freund:innen</span><span class="source social">Kolleg:innen</span><span class="source social">persönliche Erfahrungen</span></div>
-  </div>
-</div></section>
-
-<section class="quote-section scene"><div class="quote-wrap"><p class="eyebrow">Wenn Informationen kollidieren</p><blockquote id="chaosQuote">„...you hear something,<br>and you hear the opposite<br>of it at the same time...“</blockquote><p class="quote-source">T7 · Interview</p></div>
-<div class="noise"><span>Vaccine</span><span>COVID</span><span>Telegram</span><span>rules</span><span>family</span><span>news</span><span>impfung</span><span>side effects</span></div></section>
-
-<section class="chapter community scene"><div class="sticky">
-  <div class="chapter-number">05</div><div class="two-col"><div><p class="eyebrow">Community</p><h2>Information<br>wird weitergegeben.</h2></div><div class="copy"><p>Arabic-speaking community groups übersetzen, erklären und filtern Informationen über aktuelle Regeln in Deutschland.</p><p>Telegram, Facebook und YouTube werden damit zu <strong>sozialen Vermittlungsräumen</strong>.</p></div></div>
-  <div class="network" id="network"><span class="node n0">Community</span><span class="node n1">A</span><span class="node n2">B</span><span class="node n3">C</span><span class="node n4">D</span><span class="node n5">E</span><span class="node n6">F</span><span class="node n7">G</span><span class="node n8">H</span><i class="line l1"></i><i class="line l2"></i><i class="line l3"></i><i class="line l4"></i><i class="line l5"></i><i class="line l6"></i><i class="line l7"></i><i class="line l8"></i></div>
-</div></section>
-
-<section class="chapter barriers scene"><div class="sticky"><div class="chapter-number">06</div><p class="eyebrow">Barrieren</p><h2>Die Sprache ist<br>nur der Anfang.</h2>
-<div class="barrier-list"><div class="barrier"><b>01</b><div><strong>Sprache</strong><small>wenig offizielle Information auf Arabisch</small></div></div><div class="barrier"><b>02</b><div><strong>Zeit</strong><small>Arbeit, Familie, Behördengänge</small></div></div><div class="barrier"><b>03</b><div><strong>Infodemie</strong><small>sich widersprechende und wechselnde Informationen</small></div></div><div class="barrier"><b>04</b><div><strong>Vertrauen</strong><small>Fragen nach Interessen und Transparenz</small></div></div></div>
-</div></section>
-
-<section class="chapter needs scene"><div class="sticky"><div class="chapter-number">07</div><p class="eyebrow">Unterschiedliche Bedürfnisse</p><h2>Nicht alle suchen<br>dieselbe Antwort.</h2>
-<div class="needs-compare"><div class="need-card pragmatic"><span>Geimpfte</span><h3>„Wie funktioniert es?“</h3><p>Termine · Regeln · konkrete Nebenwirkungen</p></div><div class="need-card skeptical"><span>Zweifelnde / Ungeimpfte</span><h3>„Kann ich dem vertrauen?“</h3><p>Langzeitfolgen · Transparenz · mögliche Interessen</p></div></div>
-</div></section>
-
-<section class="chapter rating scene"><div class="sticky rating-wrap"><div class="chapter-number">08</div><p class="eyebrow">Bewertung der Kommunikation</p><div class="big-rating"><span id="ratingNumber">0</span><small>/ 5</small></div><p>durchschnittliche Bewertung der deutschen Impfkommunikation</p><div class="rating-bar"><span id="ratingFill"></span></div></div></section>
-
-<section class="chapter synthesis scene"><div class="sticky"><div class="chapter-number">09</div><p class="eyebrow">Was bleibt?</p><h2>Information wird<br>erst wirksam, wenn sie<br><em>ankommt.</em></h2>
-<div class="synthesis-orbit"><span class="orbit-word w1">Sprache</span><span class="orbit-word w2">Vertrauen</span><span class="orbit-word w3">Community</span><span class="orbit-word w4">Erfahrung</span><span class="orbit-word w5">Kontext</span><div class="orbit-center">Entscheidung</div></div></div></section>
-
-<section class="chapter recommendations scene"><div class="sticky"><div class="chapter-number">10</div><p class="eyebrow">Empfehlungen</p><h2>Kommunikation<br>neu denken.</h2><div class="rec-list"><div class="rec"><b>01</b><span>Multimediale, kurze Informationen in mehreren Sprachen</span></div><div class="rec"><b>02</b><span>Social Media und Community-Gruppen als Verbreitungswege</span></div><div class="rec"><b>03</b><span>Arabischsprachige medizinische Fachkräfte und Vertrauenspersonen einbinden</span></div><div class="rec"><b>04</b><span>Testimonials und persönliche Erfahrungen sichtbar machen</span></div></div></div></section>
-
-<section class="final scene"><div class="final-inner"><p class="eyebrow">Masterarbeit · Julia Holz · 2021</p><h2>Sieben Interviews.<br>Eine komplexe<br>Informationswelt.</h2><p class="final-text">Informationsverhalten bezüglich der COVID-19-Impfung von syrischen Migrant:innen in Leipzig</p><div class="final-line"></div></div></section>
-</main>
-<script src="content.js"></script><script src="script.js"></script>
-</body></html>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
