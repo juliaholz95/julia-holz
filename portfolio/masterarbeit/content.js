@@ -19,7 +19,7 @@ const STORY = {
     {
       type: "hero",
       kicker: "Masterarbeit · 2021",
-      title: "Woher kommen Informationen, wenn eine Impfung zur persönlichen Entscheidung wird?",
+      title: "Wie haben sich Migrant:innen in Deutschland zur Covid-19-Impfung informiert?",
       body: "Sieben Interviews mit syrischen Migrant:innen in Leipzig untersuchten, wie Informationen zur COVID-19-Impfung gesucht, bewertet und im sozialen Umfeld weitergegeben wurden.",
       note: "Scrollen, um die Untersuchung zu entdecken."
     },
